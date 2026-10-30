@@ -26,16 +26,17 @@ Open **http://127.0.0.1:4173/**. Stop the server with Ctrl+C. Node.js runs the o
 
 ## Deploy when ready
 
-The workflow has **only a manual trigger**, so pushing source does not deploy it. Run the workflow explicitly when you want to publish a reviewed version.
+Every push to **`main`** automatically runs the JavaScript check, builds the static site, and deploys to GitHub Pages. A failed check or build stops publication. Manual runs remain available for redeployment.
 
-1. Review the local changes. Commit and push them to `main` in `jush-ua/jush-ua.github.io` when you decide to publish the source.
-2. In that GitHub repository, open **Settings → Pages → Build and deployment → Source**, and choose **GitHub Actions**.
-3. Open **Actions → Deploy portfolio to GitHub Pages → Run workflow**, select `main`, and run it.
-4. Wait for the workflow to pass, then visit **https://jush-ua.github.io/**.
+1. Review the local changes, then commit and push them to `main` in `jush-ua/jush-ua.github.io`.
+2. Open **Actions → Deploy portfolio to GitHub Pages** to follow the automatically triggered run.
+3. Wait for the workflow to pass, then visit **https://jush-ua.github.io/**.
 
-The workflow checks JavaScript, packages only the public site into `dist/`, and uploads that directory. Development briefs, screenshots, Git metadata, and this README stay outside the published artifact. No custom domain or project base URL is introduced. For later updates, push the reviewed source and manually run the workflow again.
+The repository's **Settings → Pages → Build and deployment → Source** is configured as **GitHub Actions**. To redeploy manually, use **Actions → Deploy portfolio to GitHub Pages → Run workflow** and select `main`.
 
-This follows GitHub's [Pages publishing guidance](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [official static workflow](https://github.com/actions/starter-workflows/blob/main/pages/static.yml), with a manual trigger and an explicit public-file allowlist.
+The workflow checks JavaScript, packages only the public site into `dist/`, and uploads that directory. Development briefs, screenshots, Git metadata, and this README stay outside the published artifact. No custom domain or project base URL is introduced. Push the reviewed source to `main` for subsequent automatic deployments. Pushes to other branches do not trigger deployment.
+
+This follows GitHub's [Pages publishing guidance](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [official static workflow](https://github.com/actions/starter-workflows/blob/main/pages/static.yml), with a `main` push trigger, optional manual trigger, and an explicit public-file allowlist.
 
 ## Files and maintenance
 
@@ -44,7 +45,7 @@ This follows GitHub's [Pages publishing guidance](https://docs.github.com/en/pag
 - `script.js`: project tabs (Up/Down/Home/End), panel wipes, optional technology icons, and scroll navigation.
 - `assets/`: local fonts, their licenses, and an original favicon.
 - `tools/build.mjs`, `package.json`: dependency-free checks and public artifact packaging.
-- `.github/workflows/pages.yml`: manually triggered Pages deployment.
+- `.github/workflows/pages.yml`: automatic Pages deployment on pushes to `main`, plus manual redeployment.
 - `PRODUCT.md`, `DESIGN.md`, `.impeccable/`: development context and design documentation, excluded from `dist/`.
 
 Edit project content directly in the HTML. Each project selector's `aria-controls` must match its corresponding panel ID. Technology icons use `data-icon` values from Skill Icons; concepts without a matching icon use labeled badges. Keep status copy explicit when projects evolve, and only add repository links or screenshots after verifying them.

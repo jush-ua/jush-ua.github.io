@@ -1,7 +1,10 @@
 name: Deploy portfolio to GitHub Pages
 
-# Deployment is deliberately manual. Pushing this source does not run this workflow.
+# Every push to main is checked, built, and published. Manual runs remain available.
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
