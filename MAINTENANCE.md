@@ -34,7 +34,7 @@ Every push to **`main`** automatically runs the JavaScript check, builds the sta
 
 The repository's **Settings → Pages → Build and deployment → Source** is configured as **GitHub Actions**. To redeploy manually, use **Actions → Deploy portfolio to GitHub Pages → Run workflow** and select `main`.
 
-The workflow checks JavaScript, packages only the public site into `dist/`, and uploads that directory. Development briefs, screenshots, Git metadata, and this README stay outside the published artifact. No custom domain or project base URL is introduced. Push the reviewed source to `main` for subsequent automatic deployments. Pushes to other branches do not trigger deployment.
+The workflow checks JavaScript, packages only the public site into `dist/`, and uploads that directory. Development briefs, screenshots, Git metadata, and this maintenance guide stay outside the published artifact. No custom domain or project base URL is introduced. Push the reviewed source to `main` for subsequent automatic deployments. Pushes to other branches do not trigger deployment.
 
 This follows GitHub's [Pages publishing guidance](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [official static workflow](https://github.com/actions/starter-workflows/blob/main/pages/static.yml), with a `main` push trigger, optional manual trigger, and an explicit public-file allowlist.
 
@@ -64,3 +64,7 @@ Barlow, Barlow Condensed, and Alfa Slab One are self-hosted from [Google Fonts](
 - Follow-up review covered 320, 390, 768, and 1440 px widths, enlarged small links to 44px targets, and checked all 15 local icons. See `REVIEW.md`.
 - Responsive screenshot inspection covered mobile, tablet, and desktop. Reduced motion is implemented in both CSS and JavaScript; OS-level reduced-motion emulation was not available in this browser tool.
 - This is browser and source QA, not a full assistive-technology or cross-browser certification. Actual GitHub Pages deployment remains untested until you run the manual workflow.
+
+## Portrait assets
+
+The hero and About card use Joshua's supplied portrait, with CSS grayscale/contrast, alpha-preserving 480/960px WebP sources, and a PNG fallback. The hero loads eagerly; About loads lazily. The image tool supplied a background-removal mask; the published photograph retains original source RGB rather than the generated face. Asset provenance and the edit prompt are in `assets/portraits/SOURCES.md`.

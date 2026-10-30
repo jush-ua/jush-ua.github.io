@@ -89,7 +89,7 @@ components:
 
 **Creative North Star: "The Developer Dossier"**
 
-An expressive, energetic, rebellious opening menu leads into a readable developer dossier. Persona 5 supplies the structural grammar: overlapping mixed lettering, diagonal planes, irregular selection silhouettes, and Joshua's original JU monogram. Persona 3 Reload informs short fluid responses and information clarity.
+An expressive, energetic, rebellious opening menu leads into a readable developer dossier. Persona 5 supplies the structural grammar: overlapping mixed lettering, diagonal planes, irregular selection silhouettes, and Joshua's supplied photographic portrait. Persona 3 Reload informs short fluid responses and information clarity.
 
 Sharp backplates, offset borders, sparse halftone, and rotated display plates establish the identity. Upright reading text, explicit development statuses, and accessible selectors keep the work easy to inspect. The confirmed reference-led direction supersedes the earlier conservative split hero.
 
@@ -126,7 +126,7 @@ Focus uses cyan by default. Paper outlines distinguish opening-menu and social l
 
 ## Typography
 
-Locally hosted, licensed WOFF2 fonts use `font-display: swap`. Barlow Condensed 700 carries the display hierarchy; Alfa Slab One 400 interrupts name/menu lettering and forms the original JU monograms. Upright Barlow 400/600 carries descriptions, labels, and controls.
+Locally hosted, licensed WOFF2 fonts use `font-display: swap`. Barlow Condensed 700 carries the display hierarchy; Alfa Slab One 400 interrupts name/menu lettering for selected expressive glyphs. Upright Barlow 400/600 carries descriptions, labels, and controls.
 
 - **Identity:** the display role is a base scale. The first name mixes slab letters with condensed interjections; the surname enlarges to `1.5em/0.8`, reverses to paper, and rotates independently. The giant outlined JU is decorative.
 - **Headlines:** use the headline role; uppercase section labels use semibold body type (`0.8rem/1.4`, `0.1em` tracking).
@@ -138,13 +138,13 @@ Locally hosted, licensed WOFF2 fonts use `font-display: swap`. Barlow Condensed 
 
 ## Layout
 
-The opening is one isolated red scene: layered name upper left, menu center right over a giant JU, and introduction lower left across a black diagonal field. Desktop minimum hero height is `850px`. This is an overlapping composition rather than two adjacent hero columns.
+The opening is one isolated red scene: layered name upper left, a narrower menu center-right beside the photographic cutout, and introduction lower left across a black diagonal field. Desktop minimum hero height is `850px`. This is an overlapping composition rather than two adjacent hero columns.
 
 Fluid gutters and section spacing use the frontmatter spacing tokens. Enhanced case files use `0.85fr 1.35fr`; equipment uses `0.8fr 1.4fr`; biography uses `1.15fr 0.85fr`. Archive columns use `1.2fr 1fr`, with even entries staggered downward (`3rem`). Reading panels counter-rotate inside tilted frames.
 
 - **At max-width 1100px:** reduce name/menu scales, tighten selectors and padding, stack panel metadata, and use a `620px` project-panel minimum height.
 - **At max-width 760px:** gutters become `1.4rem`, section spacing `5rem`, hero minimum height `1160px`. Name, command menu, and introduction have separate vertical space. The name uses `clamp(2.7rem, 10.4vw, 4.6rem)`; headings use `clamp(3.4rem, 12vw, 4.5rem)`. Workbench, archive, biography, and contact stack; case panels lose minimum height. Equipment categories use two `minmax(0, 1fr)` columns. The full-screen sweep is disabled.
-- **At max-width 360px:** gutters become `1.2rem`; equipment categories become one column. Case/category numbers never wrap.
+- **At max-width 360px:** gutters become `1.2rem`; equipment categories become one column. The portrait has its own space above the menu in a `1320px` hero; menu and introduction remain separated. Case/category numbers never wrap.
 - **At min-width 1600px:** gutters become `max(7rem, calc((100vw - 1400px) / 2))`; hero height becomes `900px`.
 
 The fixed dock is bottom-centered; mobile constrains it to `calc(100vw - 22px)`. Footer padding reserves room beneath it. Document scroll padding is `2rem 0 6rem`. Mobile removal of supporting-copy line breaks must preserve word spaces.
@@ -167,7 +167,7 @@ Depth is structural: overlapping planes, thick borders, rotation, halftone, and 
 
 Square corners, irregular command plates, diagonal fields, outlined letters, and original angular stars recur. The shared cut is `polygon(2% 0, 100% 0, 98% 86%, 93% 86%, 92% 100%, 0 100%)`. Actions skew (`-7deg`), the opening menu rotates (`-9deg`), selected case/equipment plates rotate (`-2deg`), and the profile rotates (`3deg`). Counter-transform action contents and reading planes for legibility.
 
-Rounded technology tiles (`12px`) are a local exception. Halftone belongs to monograms and graphic fields with clear reading areas. Use original type/SVG/CSS geometry; reference screenshots are not production assets.
+Rounded technology tiles (`12px`) are a local exception. Halftone belongs behind portraits and graphic fields with clear reading areas. Use original type/SVG/CSS geometry; reference screenshots are not production assets.
 
 ## Components
 
@@ -189,6 +189,10 @@ Case selection uses a paper silhouette over ink, deep-red nonwrapping number, an
 
 Project panels use paper/ink, a red bottom border (`7px`), file identity strips, and explicit status labels. Native `details/summary` reveals context; its plus rotates (`45deg`) when open, and summaries have a `44px` minimum height. Flat neutral technology tags are informational. No inputs, forms, error states, or disabled control variants are shipped.
 
+### Portrait treatment
+
+Use the supplied photo in the hero and profile card. The generated image supplies only alpha; source photographic RGB is preserved before responsive encoding. CSS applies `grayscale(1) contrast(1.12)`. The hero has a restrained paper outline and red offset silhouette, with the torso cropped into the existing diagonal scene. The menu narrows to keep labels clear of the face. On mobile, the portrait supports the name at the right and the role label is constrained to 60vw; the lower body uses a diagonal cut. About uses a 320px (mobile 290px) crop in the existing tilted halftone frame. Responsive WebP sources are 480/960px with PNG fallback, intrinsic dimensions, eager/high-priority hero loading, lazy profile loading, and meaningful profile alt text.
+
 ### Archive, profile, and technology tiles
 
 Archive entries are staggered rows with a thick top rule; hover/focus-within reveals a red rule using a transform. Condensed titles/repository links stay distinct from reading copy. The profile combines an original JU halftone plate with factual definition rows. Technology tiles keep visible names and text fallback beneath local icons; image failure removes the failed image. Hover lifts/rotates tiles (`-5px, -6deg`); tiles are not selectors.
@@ -205,7 +209,7 @@ Reduced motion removes CSS transitions, animations, sweeps, wipes, and smooth sc
 
 ## Do's and Don'ts
 
-- **Do** retain the graphic opening-menu structure, original monograms, and shared selection vocabulary.
+- **Do** retain the graphic opening-menu structure, faithful portrait treatment, and shared selection vocabulary.
 - **Do** keep cyan selective and technical reading upright.
 - **Do** preserve keyboard operation, focus visibility, no-JavaScript content, reduced motion, and print access to all panels.
 - **Do** retain factual project descriptions, development statuses, and planned-feature distinctions.

@@ -29,4 +29,4 @@ Content was compared with the supplied brief and a fresh fetch of the public pro
 
 ## Limits
 
-This is source and browser QA, not a Lighthouse score or full assistive-technology certification. OS reduced-motion and print behavior were checked in source, not browser emulation. Live GitHub Pages deployment and other browser engines remain untested. Deployment steps are in README.md.
+This is source and browser QA, not a Lighthouse score or full assistive-technology certification. OS reduced-motion and print behavior were checked in source, not browser emulation. Live GitHub Pages deployment and other browser engines remain untested. Deployment steps are in MAINTENANCE.md.

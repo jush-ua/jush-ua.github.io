@@ -220,24 +220,28 @@ ul {
 }
 .hero-scene {
   position: absolute;
-  right: -3%;
+  right: -6%;
   top: 1%;
   width: 53%;
   height: 83%;
   z-index: -1;
   pointer-events: none;
 }
-.scene-monogram {
+.hero-portrait {
+  display: block;
   position: absolute;
-  right: 1%;
-  top: 6%;
-  font: 400 clamp(24rem, 40vw, 40rem)/1 var(--slab);
-  letter-spacing: -0.14em;
-  color: var(--ink);
-  -webkit-text-stroke: 7px var(--paper);
-  paint-order: stroke fill;
-  transform: rotate(14deg);
-  text-shadow: 12px 15px 0 var(--red);
+  right: -18%;
+  top: 4%;
+  width: 105%;
+  max-width: 840px;
+  filter: drop-shadow(2px 0 0 var(--paper)) drop-shadow(-2px 0 0 var(--paper))
+    drop-shadow(0 -2px 0 var(--paper)) drop-shadow(10px 10px 0 var(--red));
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(1) contrast(1.12);
 }
 .scene-ring {
   position: absolute;
@@ -373,9 +377,9 @@ h1 > .name-last {
 }
 .main-menu {
   position: absolute;
-  left: 44%;
+  left: 42%;
   top: 24%;
-  width: 43%;
+  width: 29%;
   max-width: 580px;
   display: flex;
   flex-direction: column;
@@ -418,7 +422,7 @@ h1 > .name-last {
   opacity: 0.92;
 }
 .menu-label {
-  font: 700 clamp(2.9rem, 5vw, 4.8rem)/0.95 var(--display);
+  font: 700 clamp(2.9rem, 4.3vw, 4.4rem)/0.95 var(--display);
   letter-spacing: -0.02em;
   white-space: nowrap;
   text-transform: uppercase;
@@ -920,7 +924,7 @@ details > p {
 .text-link:hover {
   color: var(--red-dark);
 }
-/* Profile screen. Typography replaces an invented character portrait. */
+/* Profile screen. User-supplied portrait shares the opening scene treatment. */
 .about-section {
   position: relative;
   display: grid;
@@ -964,43 +968,33 @@ details > p {
   box-shadow: 9px 10px 0 var(--paper);
   margin: 4rem 8px 2rem 0;
 }
-.profile-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 220px;
+.profile-portrait {
   position: relative;
+  height: 320px;
   background: var(--ink);
   margin: -3.2rem -0.7rem 1.5rem;
   transform: rotate(-7deg);
   isolation: isolate;
   overflow: hidden;
 }
-.profile-mark:before {
+.profile-portrait:before {
   content: "";
   position: absolute;
   inset: 0;
   background: radial-gradient(#777 1px, transparent 1.3px) 0 0/9px 9px;
   z-index: -1;
 }
-.profile-mark > span {
-  font: 400 11rem/0.8 var(--slab);
-  letter-spacing: -0.12em;
-  color: var(--paper);
-  transform: rotate(-8deg);
+.profile-photo,
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-.profile-mark > span:nth-child(2) {
-  transform: rotate(8deg);
-  color: var(--red);
-  -webkit-text-stroke: 2px var(--paper);
-}
-.profile-mark svg {
-  position: absolute;
-  right: -15px;
-  top: -15px;
-  fill: var(--blue);
-  height: 90px;
-  width: 90px;
+.profile-photo img {
+  object-fit: cover;
+  object-position: 50% 0;
+  filter: grayscale(1) contrast(1.12) drop-shadow(2px 0 0 var(--paper))
+    drop-shadow(-2px 0 0 var(--paper));
 }
 .profile-panel h3 {
   font: 700 3.5rem/1 var(--display);
@@ -1432,13 +1426,27 @@ footer > a:last-child {
     top: 8%;
   }
   .main-menu {
-    left: 47%;
+    left: 42%;
+  }
+  .hero-portrait {
+    right: 0;
   }
   .hero-intro {
     max-width: 510px;
   }
 }
 @media (max-width: 1100px) {
+  .positioning {
+    max-width: 25vw;
+    font-size: 0.85rem;
+  }
+  .menu-option {
+    grid-template-columns: 1.5rem 1fr;
+  }
+  .menu-option > .icon {
+    display: none;
+  }
+
   .hero {
     min-height: 850px;
   }
@@ -1449,12 +1457,12 @@ footer > a:last-child {
     font-size: 5.3vw;
   }
   .main-menu {
-    left: 43%;
-    width: 50%;
-    top: 27%;
+    left: 40%;
+    width: 32%;
+    top: 30%;
   }
   .menu-label {
-    font-size: 4.8vw;
+    font-size: 4.2vw;
   }
   .menu-option {
     min-height: 78px;
@@ -1462,9 +1470,11 @@ footer > a:last-child {
   .hero-intro {
     max-width: 43%;
   }
-  .scene-monogram {
-    font-size: 46vw;
-    top: 10%;
+  .hero-portrait {
+    width: 100%;
+    top: 12%;
+    right: -14%;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
   }
   .scene-ring {
     width: 500px;
@@ -1574,24 +1584,25 @@ footer > a:last-child {
     margin-bottom: 1.4rem;
   }
   .positioning {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    max-width: 60vw;
     line-height: 1.5;
     left: 0;
     margin-top: 1.7rem;
     transform: rotate(-2deg);
   }
   .hero-scene {
-    right: -12%;
-    top: 17%;
-    width: 70%;
-    height: 50%;
+    right: -17%;
+    top: 12%;
+    width: 64%;
+    height: 300px;
     opacity: 1;
   }
-  .scene-monogram {
-    font-size: clamp(14rem, 70vw, 24rem);
-    top: 13%;
-    right: -3%;
-    -webkit-text-stroke: 4px var(--paper);
+  .hero-portrait {
+    top: 0;
+    right: 0;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
   }
   .scene-ring {
     width: 340px;
@@ -1804,8 +1815,8 @@ footer > a:last-child {
     padding: 1.5rem;
     transform: rotate(2deg);
   }
-  .profile-mark {
-    height: 210px;
+  .profile-portrait {
+    height: 290px;
   }
   .profile-panel h3 {
     font-size: 3rem;
@@ -1946,13 +1957,16 @@ footer > a:last-child {
     line-height: 1.2;
   }
   .hero {
-    min-height: 1160px;
+    min-height: 1320px;
+  }
+  .hero-scene {
+    top: 22%;
   }
   .hero-identity {
     top: 3%;
   }
   .main-menu {
-    top: 34%;
+    top: 41%;
     left: 9%;
     width: 79%;
   }
@@ -2082,7 +2096,7 @@ footer > a:last-child {
   .stack-group[hidden] {
     display: block !important;
   }
-  .profile-mark {
+  .profile-portrait {
     display: none;
   }
   .profile-panel {

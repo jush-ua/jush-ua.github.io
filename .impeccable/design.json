@@ -110,7 +110,7 @@
       },
       "mixed-letter": {
         "displayName": "Slab interruption",
-        "purpose": "Original JU monograms and selected mixed-letter identity/menu glyphs."
+        "purpose": "Selected mixed-letter identity/menu glyphs."
       },
       "headline": {
         "displayName": "Section headline",
@@ -323,12 +323,13 @@
   ],
   "narrative": {
     "northStar": "The Developer Dossier",
-    "overview": "An expressive, energetic, rebellious opening menu leads into a readable developer dossier. Persona 5 supplies the structural grammar: overlapping mixed lettering, diagonal planes, irregular selection silhouettes, and Joshua's original JU monogram. Persona 3 Reload informs short fluid responses and information clarity.\n\nSharp backplates, offset borders, sparse halftone, and rotated display plates establish the identity. Upright reading text, explicit development statuses, and accessible selectors keep the work easy to inspect. The confirmed reference-led direction supersedes the earlier conservative split hero.",
+    "overview": "An expressive, energetic, rebellious opening menu leads into a readable developer dossier. Persona 5 supplies the structural grammar: overlapping mixed lettering, diagonal planes, irregular selection silhouettes, and Joshua's supplied photographic portrait. Persona 3 Reload informs short fluid responses and information clarity.\n\nSharp backplates, offset borders, sparse halftone, and rotated display plates establish the identity. Upright reading text, explicit development statuses, and accessible selectors keep the work easy to inspect. The confirmed reference-led direction supersedes the earlier conservative split hero.",
     "keyCharacteristics": [
       "One graphic opening scene with an overlapping command menu.",
       "Mixed slab and condensed lettering over red, ink, and paper planes.",
       "Shared accessible selection behavior across case files and equipment.",
-      "Calm reading surfaces between expressive graphic moments."
+      "Calm reading surfaces between expressive graphic moments.",
+      "Faithful monochrome portrait cutouts in the hero and tilted profile frame."
     ],
     "rules": [
       {
@@ -348,7 +349,7 @@
       }
     ],
     "dos": [
-      "Do retain the graphic opening-menu structure, original monograms, and shared selection vocabulary.",
+      "Do retain the graphic opening-menu structure, faithful portrait treatment, and shared selection vocabulary.",
       "Do keep cyan selective and technical reading upright.",
       "Do preserve keyboard operation, focus visibility, no-JavaScript content, reduced motion, and print access to all panels.",
       "Do retain factual project descriptions, development statuses, and planned-feature distinctions."

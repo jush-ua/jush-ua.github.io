@@ -46,7 +46,23 @@
       <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="hero-scene" aria-hidden="true">
           <div class="scene-ring"></div>
-          <span class="scene-monogram">JU</span>
+          <picture class="hero-portrait"
+            ><source
+              type="image/webp"
+              srcset="
+                ./assets/portraits/joshua-480.webp 480w,
+                ./assets/portraits/joshua-960.webp 960w
+              "
+              sizes="(max-width: 760px) 64vw, 48vw" />
+            <img
+              src="./assets/portraits/joshua-960.png"
+              alt=""
+              width="960"
+              height="966"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+          /></picture>
           <svg class="scene-burst" viewBox="0 0 400 400">
             <use href="#star" />
           </svg>
@@ -442,9 +458,23 @@
           </p>
         </div>
         <aside class="profile-panel" aria-label="Developer profile">
-          <div class="profile-mark" aria-hidden="true">
-            <span>J</span><span>U</span
-            ><svg viewBox="0 0 400 400"><use href="#star" /></svg>
+          <div class="profile-portrait">
+            <picture class="profile-photo"
+              ><source
+                type="image/webp"
+                srcset="
+                  ./assets/portraits/joshua-480.webp 480w,
+                  ./assets/portraits/joshua-960.webp 960w
+                "
+                sizes="(max-width: 760px) 90vw, 36vw" />
+              <img
+                src="./assets/portraits/joshua-960.png"
+                alt="Portrait of Joshua Urrea"
+                width="960"
+                height="966"
+                loading="lazy"
+                decoding="async"
+            /></picture>
           </div>
           <h3>Joshua Urrea</h3>
           <p class="profile-role">Student developer</p>
