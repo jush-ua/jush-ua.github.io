@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T19:18:35.959Z",
+  "title": "Design System: Joshua Urrea Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Charcoal ink",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.49 0 0)",
+          "oklch(0.61 0 0)",
+          "oklch(0.73 0 0)",
+          "oklch(0.85 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm paper",
+        "tonalRamp": [
+          "oklch(0.15 0.006 95)",
+          "oklch(0.26 0.006 95)",
+          "oklch(0.37 0.006 95)",
+          "oklch(0.49 0.006 95)",
+          "oklch(0.61 0.006 95)",
+          "oklch(0.73 0.006 95)",
+          "oklch(0.85 0.006 95)",
+          "oklch(0.95 0.006 95)"
+        ]
+      },
+      "red": {
+        "role": "primary",
+        "displayName": "Signal red",
+        "tonalRamp": [
+          "oklch(0.15 0.22 20)",
+          "oklch(0.26 0.22 20)",
+          "oklch(0.37 0.22 20)",
+          "oklch(0.49 0.22 20)",
+          "oklch(0.61 0.22 20)",
+          "oklch(0.73 0.22 20)",
+          "oklch(0.85 0.22 20)",
+          "oklch(0.95 0.22 20)"
+        ]
+      },
+      "red-dark": {
+        "role": "primary",
+        "displayName": "Deep signal red",
+        "tonalRamp": [
+          "oklch(0.15 0.19 20)",
+          "oklch(0.26 0.19 20)",
+          "oklch(0.37 0.19 20)",
+          "oklch(0.49 0.19 20)",
+          "oklch(0.61 0.19 20)",
+          "oklch(0.73 0.19 20)",
+          "oklch(0.85 0.19 20)",
+          "oklch(0.95 0.19 20)"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Electric cyan",
+        "tonalRamp": [
+          "oklch(0.15 0.1 205)",
+          "oklch(0.26 0.1 205)",
+          "oklch(0.37 0.1 205)",
+          "oklch(0.49 0.1 205)",
+          "oklch(0.61 0.1 205)",
+          "oklch(0.73 0.1 205)",
+          "oklch(0.85 0.1 205)",
+          "oklch(0.95 0.1 205)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(0.15 0.005 100)",
+          "oklch(0.26 0.005 100)",
+          "oklch(0.37 0.005 100)",
+          "oklch(0.49 0.005 100)",
+          "oklch(0.61 0.005 100)",
+          "oklch(0.73 0.005 100)",
+          "oklch(0.85 0.005 100)",
+          "oklch(0.95 0.005 100)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Divider",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.49 0 0)",
+          "oklch(0.61 0 0)",
+          "oklch(0.73 0 0)",
+          "oklch(0.85 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Identity base",
+        "purpose": "Condensed identity base; mixed slab letters and independently scaled surname create the actual lockup."
+      },
+      "mixed-letter": {
+        "displayName": "Slab interruption",
+        "purpose": "Original JU monograms and selected mixed-letter identity/menu glyphs."
+      },
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Major section anchors."
+      },
+      "title": {
+        "displayName": "Case title",
+        "purpose": "Project panel heading."
+      },
+      "body": {
+        "displayName": "Upright reading",
+        "purpose": "Descriptions, controls, and technical context."
+      },
+      "menu": {
+        "displayName": "Command lettering",
+        "purpose": "Uppercase opening navigation with slab-letter interjections."
+      }
+    },
+    "shadows": [
+      {
+        "name": "identity-label",
+        "value": "6px 6px 0 var(--ink,#080808)",
+        "purpose": "Crisp offset under the opening label."
+      },
+      {
+        "name": "name-first",
+        "value": "6px 8px 0 var(--paper,#faf9f5)",
+        "purpose": "Paper offset under ink name plate."
+      },
+      {
+        "name": "name-last",
+        "value": "7px 8px 0 var(--ink,#080808)",
+        "purpose": "Ink offset under paper surname."
+      },
+      {
+        "name": "case-frame",
+        "value": "12px 12px 0 var(--red,#ee163d)",
+        "purpose": "Case workbench backplate; 8px on mobile."
+      },
+      {
+        "name": "equipment-frame",
+        "value": "10px 10px 0 var(--red,#ee163d)",
+        "purpose": "Equipment display backplate; 7px on mobile."
+      },
+      {
+        "name": "profile",
+        "value": "9px 10px 0 var(--paper,#faf9f5)",
+        "purpose": "Profile identity plate."
+      },
+      {
+        "name": "contact",
+        "value": "7px 7px 0 var(--paper,#faf9f5)",
+        "purpose": "Contact link plate."
+      },
+      {
+        "name": "dock",
+        "value": "5px 5px 0 var(--red,#ee163d)",
+        "purpose": "Fixed section navigation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Shared directional easing."
+      },
+      {
+        "name": "control-transform",
+        "value": "200ms",
+        "purpose": "Opening menu, actions, equipment, and contact transforms."
+      },
+      {
+        "name": "case-transform",
+        "value": "220ms",
+        "purpose": "Case-choice movement."
+      },
+      {
+        "name": "dock-transform",
+        "value": "300ms",
+        "purpose": "Dock appearance."
+      },
+      {
+        "name": "selector-enter",
+        "value": "320ms",
+        "purpose": "Newly selected case/equipment panel wipe."
+      },
+      {
+        "name": "navigation-sweep",
+        "value": "380ms cubic-bezier(0.65, 0, 0.25, 1)",
+        "purpose": "Nonblocking desktop fragment-navigation overlay; disabled on mobile."
+      },
+      {
+        "name": "heading-settle",
+        "value": "420ms",
+        "purpose": "Linked section heading movement through the Web Animations API."
+      },
+      {
+        "name": "identity-enter",
+        "value": "650ms",
+        "purpose": "Finite opening identity entrance."
+      },
+      {
+        "name": "menu-enter",
+        "value": "700ms",
+        "purpose": "Finite opening menu entrance."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Remove transitions, animations, sweep/wipe and smooth scrolling; skip new effects and cancel active heading animations."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet-max",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      },
+      {
+        "name": "narrow-max",
+        "value": "360px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Light action",
+      "kind": "button",
+      "refersTo": "action-light",
+      "description": "Skewed exploration link; minimum height is 48px.",
+      "html": "<a class=\"ds-action-light\" href=\"#projects\"><span>Explore Projects</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a>",
+      "css": ".ds-action-light{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;min-height:48px;padding:.6rem 1.2rem;border:2px solid var(--ink,#080808);background:var(--paper,#faf9f5);color:var(--ink,#080808);font:600 1rem/1.65 var(--body,Barlow,sans-serif);text-decoration:none;transform:skew(-7deg);transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1)),background .15s}.ds-action-light>*{transform:skew(7deg)}.ds-action-light svg{width:1.5rem;height:1.5rem}.ds-action-light:hover{transform:skew(-7deg) translate(5px,-3px);background:var(--blue,#7de0ef);color:var(--ink,#080808)}.ds-action-light:focus-visible{outline:3px solid var(--blue,#7de0ef);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-action-light{transition:none;animation:none}}"
+    },
+    {
+      "name": "Dark action",
+      "kind": "button",
+      "refersTo": "action-dark",
+      "description": "Skewed exploration link; minimum height is 48px.",
+      "html": "<a class=\"ds-action-dark\" href=\"#projects\"><span>Visit GitHub</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a>",
+      "css": ".ds-action-dark{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;min-height:48px;padding:.6rem 1.2rem;border:2px solid var(--ink,#080808);background:var(--ink,#080808);color:var(--paper,#faf9f5);font:600 1rem/1.65 var(--body,Barlow,sans-serif);text-decoration:none;transform:skew(-7deg);transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1)),background .15s}.ds-action-dark>*{transform:skew(7deg)}.ds-action-dark svg{width:1.5rem;height:1.5rem}.ds-action-dark:hover{transform:skew(-7deg) translate(5px,-3px);background:var(--red,#ee163d);color:var(--ink,#080808)}.ds-action-dark:focus-visible{outline:3px solid var(--ink,#080808);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-action-dark{transition:none;animation:none}}"
+    },
+    {
+      "name": "Opening command menu",
+      "kind": "nav",
+      "refersTo": "menu-selected",
+      "description": "One menu plate specimen. Production navigation adds persistent selection and Up/Down/Home/End focus movement.",
+      "html": "<nav class=\"ds-menu\" aria-label=\"Main navigation\"><a class=\"ds-menu-option\" href=\"#projects\"><span class=\"ds-menu-key\">01</span><span class=\"ds-menu-label\">Pro<span>j</span>ects</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg><small class=\"ds-menu-note\">Current work &amp; case files</small></a></nav>",
+      "css": ".ds-menu{padding:2rem;background:var(--red,#ee163d);transform:rotate(-9deg)}.ds-menu-option{display:grid;grid-template-columns:2rem 1fr 2rem;align-items:center;position:relative;isolation:isolate;padding:.15rem 1rem .4rem;min-height:84px;color:var(--paper,#faf9f5);text-decoration:none;transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1)),color .15s}.ds-menu-option:before,.ds-menu-option:after{content:\"\";position:absolute;inset:3px -7px;z-index:-1;background:var(--ink,#080808);clip-path:var(--cut,polygon(2% 0,100% 0,98% 86%,93% 86%,92% 100%,0 100%));transform:skew(-9deg)}.ds-menu-option:before{inset:-2px -12px;background:var(--paper,#faf9f5);opacity:0}.ds-menu-label{font:700 clamp(2.9rem,5vw,4.8rem)/.95 var(--display,'Barlow Condensed',sans-serif);letter-spacing:-.02em;white-space:nowrap;text-transform:uppercase}.ds-menu-label>span{display:inline-block;font:400 .78em/1 var(--slab,'Alfa Slab One',serif);text-transform:none;transform:rotate(4deg)}.ds-menu-key{font:600 .8rem/1 var(--body,Barlow,sans-serif);color:var(--muted,#b9b9b5);transform:rotate(9deg)}.ds-menu-note{grid-column:2;font:.75rem/1.2 var(--body,Barlow,sans-serif);margin-top:.15rem}.ds-menu-option svg{grid-column:3;grid-row:1/3;width:1.5rem;height:1.5rem;opacity:0}.ds-menu-option:is(:hover,:focus-visible){color:var(--ink,#080808);transform:translateX(-18px) scale(1.035)}.ds-menu-option:is(:hover,:focus-visible):before{opacity:1}.ds-menu-option:is(:hover,:focus-visible):after{background:var(--paper,#faf9f5);transform:skew(-9deg) translate(5px,-5px)}.ds-menu-option:is(:hover,:focus-visible) svg{opacity:1}.ds-menu-option:is(:hover,:focus-visible) .ds-menu-key{color:var(--red-dark,#b30d2b)}.ds-menu-option:focus-visible{outline:3px solid var(--paper,#faf9f5);outline-offset:6px}@media(max-width:760px){.ds-menu-label{font-size:clamp(2.7rem,9vw,4rem)}.ds-menu-option:is(:hover,:focus-visible){transform:translateX(-6px) scale(1.015)}}@media(prefers-reduced-motion:reduce){.ds-menu-option,.ds-menu-option:before,.ds-menu-option:after{transition:none;animation:none}}"
+    },
+    {
+      "name": "Selected case plate",
+      "kind": "button",
+      "refersTo": "project-choice-selected",
+      "description": "Selected visual specimen; production uses role=tab, aria-selected, aria-controls, roving focus, and a labelled panel.",
+      "html": "<div class=\"ds-case-stage\"><button class=\"ds-case\" type=\"button\" aria-pressed=\"true\"><b class=\"ds-case-number\" aria-hidden=\"true\">01</b><span>Thesis / In development</span><strong>TanikaLaya</strong><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></button></div>",
+      "css": ".ds-case-stage{padding:1.5rem;background:var(--ink,#080808)}.ds-case{position:relative;isolation:isolate;display:grid;grid-template-columns:4rem 1fr 1rem;align-items:center;column-gap:.6rem;min-height:108px;padding:1rem .8rem;border:0;background:transparent;color:var(--ink,#080808);text-align:left;cursor:pointer;transform:translateX(10px) rotate(-2deg);transition:transform .22s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-case:before{content:\"\";position:absolute;inset:3px -5px;z-index:-1;clip-path:var(--cut,polygon(2% 0,100% 0,98% 86%,93% 86%,92% 100%,0 100%));background:var(--paper,#faf9f5)}.ds-case-number{white-space:nowrap;grid-column:1;grid-row:1/3;font:700 4rem/.9 var(--display,'Barlow Condensed',sans-serif);letter-spacing:-.04em;color:var(--red-dark,#b30d2b)}.ds-case>span{grid-column:2/4;font:.75rem/1.35 var(--body,Barlow,sans-serif);color:#454545;margin-bottom:.25rem}.ds-case>strong{grid-column:2;font:700 clamp(1.5rem,2.5vw,2.5rem)/1 var(--display,'Barlow Condensed',sans-serif)}.ds-case svg{width:1rem;height:1rem;grid-column:3}.ds-case:hover{transform:translateX(10px) rotate(-2deg)}.ds-case:focus-visible{outline:3px solid var(--blue,#7de0ef);outline-offset:6px}@media(max-width:760px){.ds-case{grid-template-columns:3rem 1fr 1rem;min-height:84px;transform:translateX(3px) rotate(-1deg)}.ds-case-number{font-size:3rem}}@media(prefers-reduced-motion:reduce){.ds-case{transition:none;animation:none}}"
+    },
+    {
+      "name": "Equipment category",
+      "kind": "button",
+      "refersTo": "equipment-choice-selected",
+      "description": "Selected category specimen. Production shares the case selector behavior and supports all four arrow keys.",
+      "html": "<button class=\"ds-kit\" type=\"button\" aria-pressed=\"true\"><span aria-hidden=\"true\">01</span><strong>Languages</strong><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></button>",
+      "css": ".ds-kit{position:relative;isolation:isolate;display:grid;grid-template-columns:2rem 1fr 1rem;align-items:center;gap:1rem;min-height:77px;padding:.8rem 1.5rem;background:transparent;border:0;color:var(--paper,#faf9f5);text-align:left;cursor:pointer;transform:translateX(12px) rotate(-2deg);transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-kit:before{content:\"\";position:absolute;inset:0;z-index:-1;clip-path:var(--cut,polygon(2% 0,100% 0,98% 86%,93% 86%,92% 100%,0 100%));background:var(--ink,#080808)}.ds-kit>span{white-space:nowrap;font:700 2rem/1 var(--display,'Barlow Condensed',sans-serif);color:var(--blue,#7de0ef)}.ds-kit>strong{font:700 2rem/1 var(--display,'Barlow Condensed',sans-serif);text-transform:uppercase}.ds-kit svg{width:1rem;height:1.5rem}.ds-kit:hover{transform:translateX(12px) rotate(-2deg)}.ds-kit:focus-visible{outline:3px solid var(--ink,#080808);outline-offset:6px}@media(max-width:760px){.ds-kit{grid-template-columns:1.5rem 1fr;gap:.4rem;min-height:78px;padding:.7rem .6rem;transform:rotate(-2deg)}.ds-kit>strong{font-size:1.45rem}.ds-kit>span{font-size:1.5rem}.ds-kit svg{display:none}.ds-kit:is(:hover,:focus-visible){transform:translateY(-3px)}}@media(prefers-reduced-motion:reduce){.ds-kit{transition:none;animation:none}}"
+    },
+    {
+      "name": "Case reading panel",
+      "kind": "card",
+      "refersTo": "project-panel",
+      "description": "Upright paper reading plane with explicit development status; production supplies full case content.",
+      "html": "<article class=\"ds-panel\" tabindex=\"0\"><span class=\"ds-status\">In development</span><h3>POSTURE-CHECK</h3><p>Computer vision project</p></article>",
+      "css": ".ds-panel{padding:2rem 2.2rem;background:var(--paper,#faf9f5);color:var(--ink,#080808);border-bottom:7px solid var(--red,#ee163d);font:400 .95rem/1.65 var(--body,Barlow,sans-serif);max-width:65ch}.ds-status{display:inline-block;padding:.2rem .5rem;background:var(--red,#ee163d);color:var(--ink,#080808);font:600 .75rem/1.4 var(--body,Barlow,sans-serif)}.ds-panel h3{margin:1.3rem 0 1rem;font:700 clamp(2rem,2.6vw,2.7rem)/1.05 var(--display,'Barlow Condensed',sans-serif)}.ds-panel p{margin:0;color:#444}.ds-panel:focus-visible{outline:3px solid var(--blue,#7de0ef);outline-offset:6px}@media(max-width:760px){.ds-panel{padding:1.3rem;border-bottom-width:5px}}"
+    },
+    {
+      "name": "Project disclosure",
+      "kind": "custom",
+      "description": "Native disclosure with visible focus and an opening plus; no JavaScript is needed.",
+      "html": "<details class=\"ds-details\"><summary>What&#39;s planned <span aria-hidden=\"true\">+</span></summary><p>Planned capabilities remain distinct from implemented work.</p></details>",
+      "css": ".ds-details{padding:.35rem 1rem 0;border-top:1px solid #aaa;background:var(--paper,#faf9f5);color:var(--ink,#080808);font-family:var(--body,Barlow,sans-serif)}.ds-details summary{display:flex;align-items:center;justify-content:space-between;min-height:44px;cursor:pointer;list-style:none;font-size:.85rem;font-weight:600}.ds-details summary::-webkit-details-marker{display:none}.ds-details summary>span{font-size:1.5rem;color:var(--red-dark,#b30d2b);transition:transform .2s}.ds-details[open] summary>span{transform:rotate(45deg)}.ds-details p{font-size:.9rem;color:#444;padding:.6rem 0;margin:0;line-height:1.6}.ds-details summary:focus-visible{outline:3px solid var(--ink,#080808);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-details summary>span{transition:none;animation:none}}"
+    },
+    {
+      "name": "Informational technology tags",
+      "kind": "chip",
+      "description": "Noninteractive flat tags label technologies; they have no selected or hover state.",
+      "html": "<ul class=\"ds-tags\" aria-label=\"Technologies\"><li>Python</li><li>Computer Vision</li></ul>",
+      "css": ".ds-tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:0}.ds-tags li{padding:.2rem .5rem;background:#e5e4e0;color:var(--ink,#080808);font:400 .75rem/1.4 var(--body,Barlow,sans-serif)}"
+    },
+    {
+      "name": "Technology tile",
+      "kind": "custom",
+      "refersTo": "tech-badge",
+      "description": "Named noninteractive equipment tile. Production overlays local icons; this portable specimen preserves the text fallback.",
+      "html": "<div class=\"ds-tech\"><span aria-hidden=\"true\">Py</span><span>Python</span></div>",
+      "css": ".ds-tech{padding:1rem;background:var(--ink,#080808);display:flex;flex-direction:column;align-items:center;gap:.6rem;width:78px;text-align:center;color:var(--paper,#faf9f5);font:.8rem/1.3 var(--body,Barlow,sans-serif)}.ds-tech>span:first-child{display:grid;place-items:center;width:62px;height:62px;border:1px solid #666;border-radius:12px;background:#333;font-weight:600;overflow:hidden;transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-tech:hover>span:first-child{transform:translateY(-5px) rotate(-6deg)}@media(prefers-reduced-motion:reduce){.ds-tech>span:first-child{transition:none;animation:none}}"
+    },
+    {
+      "name": "Contact plate",
+      "kind": "button",
+      "description": "Angular social link with a thick border and sharp paper offset.",
+      "html": "<div class=\"ds-contact-stage\"><a class=\"ds-contact\" href=\"https://github.com/jush-ua\"><span>Code &amp; projects</span><strong>GitHub</strong><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a></div>",
+      "css": ".ds-contact-stage{padding:2rem;background:var(--red,#ee163d)}.ds-contact{display:grid;grid-template-columns:1fr auto;align-items:center;position:relative;padding:1.4rem 2rem;border:4px solid var(--ink,#080808);box-shadow:7px 7px 0 var(--paper,#faf9f5);background:var(--paper,#faf9f5);color:var(--ink,#080808);text-decoration:none;transform:rotate(-4deg);transition:transform .2s var(--ease,cubic-bezier(.16,1,.3,1)),background .2s}.ds-contact>span{font:.8rem/1.65 var(--body,Barlow,sans-serif)}.ds-contact>strong{grid-row:2;font:700 3.2rem/1 var(--display,'Barlow Condensed',sans-serif)}.ds-contact svg{grid-column:2;grid-row:1/3;width:2rem;height:2rem}.ds-contact:is(:hover,:focus-visible){transform:rotate(-1deg) translateX(-8px);background:var(--blue,#7de0ef)}.ds-contact:focus-visible{outline:3px solid var(--paper,#faf9f5);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-contact{transition:none;animation:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Developer Dossier",
+    "overview": "An expressive, energetic, rebellious opening menu leads into a readable developer dossier. Persona 5 supplies the structural grammar: overlapping mixed lettering, diagonal planes, irregular selection silhouettes, and Joshua's original JU monogram. Persona 3 Reload informs short fluid responses and information clarity.\n\nSharp backplates, offset borders, sparse halftone, and rotated display plates establish the identity. Upright reading text, explicit development statuses, and accessible selectors keep the work easy to inspect. The confirmed reference-led direction supersedes the earlier conservative split hero.",
+    "keyCharacteristics": [
+      "One graphic opening scene with an overlapping command menu.",
+      "Mixed slab and condensed lettering over red, ink, and paper planes.",
+      "Shared accessible selection behavior across case files and equipment.",
+      "Calm reading surfaces between expressive graphic moments."
+    ],
+    "rules": [
+      {
+        "name": "The Selective Cyan Rule",
+        "body": "Keep cyan subordinate to red; reserve it for small signals and interaction.",
+        "section": "colors"
+      },
+      {
+        "name": "The Upright Reading Rule",
+        "body": "Keep paragraphs upright and give technical context ordinary reading leading; rotation and tight leading belong to display composition.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hard Backplate Rule",
+        "body": "Use crisp offset geometry for separation; preserve the implemented zero-blur vocabulary.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do retain the graphic opening-menu structure, original monograms, and shared selection vocabulary.",
+      "Do keep cyan selective and technical reading upright.",
+      "Do preserve keyboard operation, focus visibility, no-JavaScript content, reduced motion, and print access to all panels.",
+      "Do retain factual project descriptions, development statuses, and planned-feature distinctions."
+    ],
+    "donts": [
+      "Don't ship game artwork, characters, logos, music, or reference screenshots as production assets.",
+      "Don't replace irregular selection silhouettes with generic rounded cards.",
+      "Don't wrap case/category numbers or compress mobile composition at the expense of readable controls.",
+      "Don't turn informational tags or technology tiles into controls without appropriate semantics and keyboard behavior."
+    ]
+  }
+}
