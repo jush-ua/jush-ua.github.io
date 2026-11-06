@@ -6,7 +6,7 @@ THESIS: A graphic opening menu becomes a case-file portfolio. The user's four su
 
 OWN-WORLD: Signal red #ee163d, ink #080808, paper #faf9f5, restrained cyan #7de0ef. Barlow Condensed plus licensed Alfa Slab One create mixed cut-paper lettering; upright Barlow carries descriptions. User-supplied monochrome portrait replaces JU monograms in hero and profile. Preserve photographic likeness; the image-tool result supplies only alpha. Irregular backplates, halftone fields, thick offset borders, and rotated type plates recur across screens.
 
-STORY: Meet a student developer, select current work, inspect previous repositories, discover tools, and connect. All development statuses and planned features remain explicit.
+STORY: Meet a full stack developer, select current work, inspect previous repositories, discover tools, and connect. All development statuses and planned features remain explicit.
 
 FIRST VIEWPORT: One red/black diagonal scene, an upper-left layered Joshua/Urrea lockup, a center-right selectable text menu beside the faithful portrait cutout, and lower-left introduction/CTA. The menu overlaps the visual field rather than occupying a separate column. Mobile gives the name and menu their own vertical reading order; paragraphs remain clear of graphic overlaps.
 

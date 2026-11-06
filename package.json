@@ -2,7 +2,7 @@
   "name": "joshua-urrea-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "A static, Persona-inspired student developer portfolio.",
+  "description": "A static, Persona-inspired full stack developer portfolio.",
   "scripts": {
     "check": "node --check script.js",
     "build": "node tools/build.mjs"

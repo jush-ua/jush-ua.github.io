@@ -11,7 +11,7 @@ Confirmed: plain HTML, CSS, and JavaScript. Build directly from the user's detai
 Joshua Urrea's developer portfolio presents his student projects, technical interests, and learning journey. Visitors can explore ongoing work, inspect previous repositories, and connect through GitHub or LinkedIn.
 
 ## Positioning
-Student Developer | AI/ML | Computer Vision | Web & Mobile Development. Based in the Philippines. No invented experience, proficiency rankings, validated performance, or finished-product claims.
+Full Stack Developer | AI/ML | Computer Vision | Web & Mobile Development. Based in the Philippines. No invented experience, proficiency rankings, validated performance, or finished-product claims.
 
 ## Capabilities and Constraints
 Static GitHub Pages at https://jush-ua.github.io/. Plain HTML/CSS/JavaScript, a dependency-free static build, and automatic GitHub Pages deployment on pushes to main. User explicitly authorized committing, pushing, and publishing the portrait integration. Current projects have no verified public repository links. AFAIK capabilities remain planned. TanikaLaya is non-clinical, human-in-the-loop work in development.
